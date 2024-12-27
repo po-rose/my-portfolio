@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jane Yang</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="../../../../https@fonts.gstatic.com/default.htm" crossorigin>    
+     <!-- Plugins css -->
+    <link rel="stylesheet" href="assets/css/mobilemenu.css" />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="font-rubik ">
+
+    <!-- Preloader start -->
+    <div id="preloader">
+        <div class="loader--border"></div>
+    </div>
+    <!-- Preloader end -->
+
+      <!-- Header area start -->
+      <header class="absolute w-full left-0 top-0">
+        <div class="header__sticky py-5">
+          <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <a href="index.html">
+                      <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center md:hidden">
+                  <nav >
+                      <ul class="flex items-center">
+                          <li>
+                            <a href="#home" class="text-[17px] xl:text-[19px] text-primary  font-medium hover:text-accent1  transition duration-300 relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Home</a>
+                          </li>                        
+                          </li>
+                          <li>
+                            <a href="#services" class="text-[17px] xl:text-[19px] text-primary  font-medium hover:text-accent1  transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Services</a>
+                          </li>
+                          <li>
+                            <a href="#portfolio" class="text-[17px] xl:text-[19px] text-primary  font-medium hover:text-accent1  transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Portfolio</a>
+                          </li>                         
+                      </ul> 
+                  </nav>
+                  <a href="assets/resume/Jane.pdf" download="Jane" target="_blank">
+                    <button class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
+                      <span class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                      </span>
+                      <span class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download CV</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="lg:hidden">
+                  <button class="offcanvas__header--menu__open--btn text-primary  " data-offcanvas>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+         <!-- Start Offcanvas header menu -->
+        <div class="offcanvas__header lg:hidden   ">
+          <div class="offcanvas__inner">
+              <div class="offcanvas__logo">
+                  <a class="offcanvas__logo_link" href="index.html">
+                      <img src="assets/images/logo.png" alt="Grocee Logo" width="158" height="36">                     
+                  </a>
+                  <button class="offcanvas__close--btn " data-offcanvas>close</button>
+              </div>
+              <nav class="offcanvas__menu">
+                  <ul class="offcanvas__menu_ul">
+                      <li class="offcanvas__menu_li">
+                          <a class="offcanvas__menu_item " href="#home">Home</a>
+                      </li>                    
+                      <li class="offcanvas__menu_li"><a class="offcanvas__menu_item " href="#services">Services</a></li>
+                      <li class="offcanvas__menu_li"><a class="offcanvas__menu_item " href="#portfolio">Portfolio</a></li>
+                      <li class="offcanvas__menu_li"><a class="offcanvas__menu_item " href="#blog">Blog</a></li>                      
+                  </ul>
+                  <button class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
+                    <span class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </span>
+                    <span class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download CV</span>
+                  </button>
+              </nav>
+              
+          </div>
+        </div>
+        <!-- End Offcanvas header menu -->
+        </div>
+      </header>
+      <!-- Header area end -->
+
+      <!-- Main wrapper start -->
+      <main>
+        <!-- Hero section start -->
+        <section class="sm:h-full only-md:h-screen lg:min-h-screen flex justify-center items-center overflow-hidden" id="home" style="background-color: #F5F0EE;">
+            <div class="container mx-auto flex sm:flex-col items-center justify-center lg:mt-[40px] only-md:mt-[40px] sm:pt-[100px] sm:pb-[70px]">
+                <div class="ltr:xl:pl-[95px] ltr:lg:pl-[50px] ltr:only-md:pl-[40px] rtl:xl:pr-[95px] rtl:lg:pr-[50px] rtl:only-md:pr-[40px] sm:mt-[30px] text-center">
+                  <div class="lg:flex md:flex sm:flex-col">
+                    <span class="text-accent1 text-[24px] font-semibold italic">HELLO  I'M</span>
+                    <h2 class="lg:text-[60px] only-md:text-[40px] sm:text-[28px] font-heebo text-heading">Jane Yang.👋</h2>
+                  </div>
+                  <div class="w-full flex">
+                    <h1 class="font-heebo text-accent1 lg:text-[80px] only-md:text-[60px] sm:text-[40px] font-bold" >🔥</h1>
+                    <h1 class="font-heebo text-accent1 lg:text-[80px] only-md:text-[60px] sm:text-[40px] font-bold " id="developer"> </h1>
+                    <h1 class="font-heebo text-accent1 lg:text-[80px] only-md:text-[60px] sm:text-[40px] font-bold" >|</h1>
+                  </div>
+                  
+                  <!-- Full Stack Developer -->
+                  <p class="lg:text-[20px] md:text-[16px] text-paragraph   lg:mt-[18px] md:mt-[15px]">Having experience with <b>over 5 years as Full-Stack Developer</b>, I always <b> FOCUS ON</b> providing <b>EFFICIENT SOLUTION</b> based on the <b>keen attention</b> to what needs to be done, implementing <b>best practices and guidelines</b>.</p>
+                   <div class="flex items-center gap-[18px] flex-wrap mt-[30px] sm:justify-center">
+                      <div class="flex items-center flex-wrap gap-[15px] sm:justify-center">
+                        <span class="font-heebo lg:text-[22px] md:text-[18px] font-semibold shrink-0 text-primary ">Follow Me: </span>
+                        <div class="flex items-center">
+                          <a href="https://t.me/xprofessional1130" target="_blank" class="w-[30px] h-[30px] flex items-center justify-center text-accent1 transition duration-300 hover:bg-accent1 hover:text-white ">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 44.913 26.682 H 15.231 c -8.28 0 -15.002 -3.611 -15.211 -11.841 C 0.016 14.972 0 15.099 0 15.231 v 31.303 c 8.265 10.233 20.908 16.784 35.087 16.784 h 0.682 c 8.28 0 12.002 3.611 12.211 11.841 c 0.003 -0.131 0.02 -0.258 0.02 -0.39 C 48 83.181 44.181 90 35.769 90 h 39 C 83.181 90 90 83.181 90 74.769 C 90 42.732 69.814 26.682 44.913 26.682 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 90 74.769 L 90 74.769 c 0 -24.901 -20.186 -45.087 -45.087 -45.087 H 15.231 c -8.28 0 -15.002 -6.611 -15.211 -14.841 C 0.016 14.972 0 15.099 0 15.231 C 0 6.819 6.819 0 15.231 0 h 59.538 C 83.181 0 90 6.819 90 15.231 V 74.769" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 0 74.769 V 43.534 c 8.265 10.233 20.908 16.784 35.087 16.784 h 0.682 c 8.28 0 15.002 6.611 15.211 14.841 c 0.003 -0.131 0.02 -0.258 0.02 -0.39 C 51 83.181 44.181 90 35.769 90 H 15.231 C 6.819 90 0 83.181 0 74.769 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 38.547 52.997 l 22.092 16.322 c 2.522 1.391 4.34 0.671 4.969 -2.34 l 8.993 -42.377 c 0.921 -3.691 -1.407 -5.366 -3.819 -4.271 L 17.976 40.692 c -3.605 1.446 -3.583 3.457 -0.657 4.353 l 13.551 4.23 l 31.371 -19.792 c 1.481 -0.898 2.841 -0.415 1.725 0.575 L 38.547 52.997 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(252,253,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                              </g>
+                            </svg>
+                          </a>
+                          <!-- <a href="https://www.linkedin.com/in/Jane-yang-b8249b326/" target="_blank" class="w-[30px] h-[30px] flex items-center justify-center text-accent1 transition duration-300 hover:bg-accent1 hover:text-white ltr:ml-[10px] rtl:mr-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 0 6.447 C 0 2.887 2.978 0 6.651 0 h 76.698 C 87.022 0 90 2.887 90 6.447 v 77.106 C 90 87.114 87.022 90 83.349 90 H 6.651 C 2.978 90 0 87.114 0 83.553 V 6.447 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 20.485 29.151 c 4.74 0 7.691 -3.121 7.691 -7.021 c -0.088 -3.988 -2.95 -7.022 -7.601 -7.022 c -4.65 0 -7.69 3.034 -7.69 7.022 c 0 3.9 2.95 7.021 7.512 7.021 H 20.485 L 20.485 29.151 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.282 75.339 v -40.64 H 13.688 v 40.64 H 27.282 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 34.804 75.339 h 13.594 V 52.644 c 0 -1.215 0.088 -2.428 0.447 -3.296 c 0.983 -2.427 3.219 -4.94 6.975 -4.94 c 4.919 0 6.887 3.727 6.887 9.19 v 21.741 h 13.592 V 52.037 c 0 -12.483 -6.706 -18.291 -15.65 -18.291 c -7.333 0 -10.553 4.073 -12.342 6.847 h 0.091 v -5.894 H 34.804 C 34.982 38.513 34.804 75.339 34.804 75.339 L 34.804 75.339 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                              </g>
+                              </svg>
+                          </a> -->
+                          <a href="https://join.skype.com/invite/jkpt3fUCnQgr" target="_blank" class="w-[30px] h-[30px] flex items-center justify-center text-accent1  transition duration-300 hover:bg-accent1 hover:text-white ltr:ml-[10px] rtl:mr-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 44.913 26.682 H 15.231 c -8.28 0 -15.002 -3.611 -15.211 -11.841 C 0.016 14.972 0 15.099 0 15.231 v 31.303 c 8.265 10.233 20.908 16.784 35.087 16.784 h 0.682 c 8.28 0 12.002 3.611 12.211 11.841 c 0.003 -0.131 0.02 -0.258 0.02 -0.39 C 48 83.181 44.181 90 35.769 90 h 39 C 83.181 90 90 83.181 90 74.769 C 90 42.732 69.814 26.682 44.913 26.682 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 90 74.769 L 90 74.769 c 0 -24.901 -20.186 -45.087 -45.087 -45.087 H 15.231 c -8.28 0 -15.002 -6.611 -15.211 -14.841 C 0.016 14.972 0 15.099 0 15.231 C 0 6.819 6.819 0 15.231 0 h 59.538 C 83.181 0 90 6.819 90 15.231 V 74.769" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 0 74.769 V 43.534 c 8.265 10.233 20.908 16.784 35.087 16.784 h 0.682 c 8.28 0 15.002 6.611 15.211 14.841 c 0.003 -0.131 0.02 -0.258 0.02 -0.39 C 51 83.181 44.181 90 35.769 90 H 15.231 C 6.819 90 0 83.181 0 74.769 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 71.328 49.367 c -0.909 -1.256 -1.33 -2.79 -1.328 -4.34 c 0 -0.009 0 -0.018 0 -0.027 c 0 -13.807 -11.192 -25 -25 -25 c -3.02 0 -5.915 0.538 -8.595 1.52 c -1.45 0.531 -3.038 0.634 -4.525 0.215 c -1.313 -0.37 -2.716 -0.526 -4.168 -0.426 c -6.104 0.42 -11.017 5.422 -11.334 11.532 c -0.151 2.916 0.724 5.621 2.294 7.791 c 0.909 1.256 1.33 2.79 1.328 4.34 c 0 0.009 0 0.018 0 0.027 c 0 13.807 11.193 25 25 25 c 3.02 0 5.915 -0.538 8.595 -1.52 c 1.45 -0.531 3.038 -0.634 4.525 -0.215 c 1.313 0.37 2.716 0.526 4.168 0.426 c 6.104 -0.42 11.017 -5.422 11.334 -11.532 C 73.772 54.243 72.898 51.537 71.328 49.367 z M 45.915 40.518 c 5.041 1.199 12.658 3.01 12.658 11.401 c 0 4.133 -2.036 7.287 -5.732 8.878 c -2.638 1.136 -5.623 1.289 -8.196 1.289 c -7.905 0 -12.898 -6.147 -13.107 -6.409 c -1.294 -1.623 -1.028 -3.99 0.596 -5.284 c 1.623 -1.295 3.99 -1.028 5.284 0.595 c 0.011 0.014 2.997 3.443 7.227 3.577 c 5.093 0.162 6.256 -1.354 6.407 -2.647 c 0.184 -1.58 -1.221 -2.74 -6.878 -4.084 c -4.795 -1.14 -12.041 -2.863 -12.041 -10.591 c 0 -2.406 0.979 -10.258 13.573 -10.258 c 7.952 0 12.647 6.262 12.843 6.528 c 1.23 1.673 0.871 4.027 -0.803 5.257 c -1.666 1.224 -4.005 0.874 -5.239 -0.779 c -0.088 -0.114 -2.775 -3.103 -6.801 -3.486 c -3.046 -0.29 -6.053 0.809 -6.053 2.432 C 39.654 38.656 40.518 39.234 45.915 40.518 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                              </g>
+                              </svg>
+                          </a>
+                          <a href="#" class="w-[30px] h-[30px] flex items-center justify-center text-accent1 transition duration-300 hover:bg-accent1 hover:text-white ltr:ml-[10px] rtl:mr-[10px]">  
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 73.426 90 H 16.574 C 7.42 90 0 82.58 0 73.426 V 16.574 C 0 7.42 7.42 0 16.574 0 h 56.853 C 82.58 0 90 7.42 90 16.574 v 56.853 C 90 82.58 82.58 90 73.426 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 56.901 62.98 c 0 0 -1.541 -1.841 -2.825 -3.467 c 5.608 -1.584 7.748 -5.094 7.748 -5.094 c -1.755 1.156 -3.425 1.969 -4.923 2.526 c -2.14 0.899 -4.195 1.498 -6.207 1.841 c -4.11 0.771 -7.877 0.557 -11.087 -0.043 c -2.44 -0.471 -4.538 -1.156 -6.293 -1.841 c -0.985 -0.385 -2.055 -0.856 -3.125 -1.455 c -0.128 -0.086 -0.257 -0.128 -0.385 -0.214 c -0.086 -0.043 -0.128 -0.086 -0.171 -0.128 c -0.771 -0.428 -1.199 -0.728 -1.199 -0.728 s 2.055 3.425 7.491 5.051 c -1.284 1.627 -2.868 3.553 -2.868 3.553 C 23.596 62.68 20 56.473 20 56.473 c 0 -13.784 6.164 -24.957 6.164 -24.957 c 6.164 -4.623 12.029 -4.495 12.029 -4.495 l 0.428 0.514 c -7.705 2.226 -11.259 5.608 -11.259 5.608 s 0.942 -0.514 2.526 -1.241 c 4.58 -2.012 8.219 -2.568 9.717 -2.697 c 0.257 -0.043 0.471 -0.086 0.728 -0.086 c 2.611 -0.342 5.565 -0.428 8.647 -0.086 c 4.067 0.471 8.433 1.67 12.885 4.11 c 0 0 -3.382 -3.211 -10.659 -5.437 l 0.599 -0.685 c 0 0 5.865 -0.128 12.029 4.495 c 0 0 6.164 11.173 6.164 24.957 C 70 56.473 66.361 62.68 56.901 62.98 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 36.995 42.988 c -2.44 0 -4.366 2.14 -4.366 4.752 c 0 2.611 1.969 4.752 4.366 4.752 c 2.44 0 4.366 -2.14 4.366 -4.752 C 41.404 45.129 39.435 42.988 36.995 42.988 z M 52.62 42.988 c -2.44 0 -4.366 2.14 -4.366 4.752 c 0 2.611 1.969 4.752 4.366 4.752 c 2.44 0 4.366 -2.14 4.366 -4.752 C 56.986 45.129 55.06 42.988 52.62 42.988 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #ee5f38; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                              </g>
+                              </svg>    
+                          </a>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+        
+        <!-- Services section start -->
+        <section class="lg:py-[100px] md:py-[70px]" id="services">
+            <div class="container mx-auto">
+              <!-- Section title start -->
+               <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                  <div class="max-w-full lg:max-w-[580px]  w-full">
+                    <span class="text-accent1 text-[40px] font-bold">- WHAT CAN I DO -</span>                      
+                  </div>                    
+               </div>
+              <!-- Section title end -->
+
+              <!-- Services list start -->
+              <div class="grid gap-[30px] lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]    hover:translate-y-[-10px] transition duration-500">
+                  <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                    <span class="bg-[#48CDA0] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#79DAB9] before:opacity-[0.26]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </span>
+                    <h3 class="text-primary  text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Web Development</h3>
+                    <p class="text-[17px] text-[#636363]" style="text-align: justify;">I specialize in web development, creating and managing websites and web applications.</p>
+                  </div>
+                </div>
+                <!-- Single service end -->
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]    hover:translate-y-[-10px] transition duration-500">
+                  <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                    <span class="bg-[#E6BC13] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#E6BC13] before:opacity-[0.22]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                    </span>
+                    <h3 class="text-primary  text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">24/7 Support</h3>
+                    <p class="text-[17px] text-[#636363]" style="text-align: justify;">I provide 24/7 support, ensuring continuous assistance and prompt resolution of issues at any time, day or night.</p>
+                  </div>
+                </div>
+                <!-- Single service end -->
+                                      
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]    hover:translate-y-[-10px] transition duration-500">
+                  <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                    <span class="bg-[#A348CD] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#A348CD] before:opacity-[0.16]">
+                      <svg width="40" height="40" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm288 32c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"/></svg>
+                    </span>
+                    <h3 class="text-primary  text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Development Design</h3>
+                    <p class="text-[17px] text-[#636363]" style="text-align: justify;">I specialize in development design, focusing on crafting efficient, user-centric solutions through thoughtful architecture and intuitive interfaces.</p>
+                  </div>
+                </div>
+                <!-- Single service end -->
+
+              </div>
+              <!-- Services list end -->
+
+            </div>
+        </section>
+        <!-- Services section end -->
+
+        <!--  Resume section start -->
+        <section class="lg:py-[100px] md:py-[70px]  bg-[#EFF3F7]">
+          <div class="container mx-auto">
+            <!-- Section title start -->
+             <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+              <div class="w-full">
+                <span class="text-accent1 text-[40px] font-bold">- EXPERIENCE AND EDUCATION -</span>                  
+              </div>
+             </div>
+            <!-- Section title end -->
+
+            <!-- Resume wrapper start -->
+            <div class="flex flex-wrap">
+
+              <!-- Skill -->
+              <div class="w-full max-w-[50%] sm:max-w-full flex-grow">
+                  <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
+                      <!-- border line -->
+                      <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1"></div>
+                      <!-- border line  end-->
+
+                      <!-- Single resume start -->
+                      <div class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative">
+                        <span class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                        <div class="w-[70px] h-[70px]">
+                          <span class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                            <svg width="25" height="40" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                          </span>
+                        </div>
+                        <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                            <div class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                              <h3 class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[22px] text-primary ">SENIOR FULL STACK ENGINEER</h3>
+                              <span class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">React.js</span>
+                            </div>
+                            <p class="text-paragraph   mt-[10px] text-[17px]">Developed and maintained a robust Internal Tool for a food delivery platform using React.js, Next.js, Laravel, facilitating seamless communication between delivery personnel, suppliers, and buyers.</p>
+                          <span class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2023 - 2024</span>
+                        </div>
+                    </div>
+                    <!-- Single resume end -->
+
+                    <!-- Single resume start -->
+                    <div class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                        <span class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                        <div class="w-[70px] h-[70px]">
+                          <span class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                            <svg width="25" height="40" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                          </span>
+                        </div>
+                        <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                            <div class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                              <h3 class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[22px] text-primary ">SENIOR FRONTEND ENGINEER</h3>
+                              <span class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">Next.js</span>
+                            </div>
+                            <p class="text-paragraph   mt-[10px] text-[17px]">Integrated existing software into new or modified systems and operating environments, ensuring seamless migration and compatibility with evolving technology landscapes.</p>
+                          <span class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2022</span>
+                        </div>
+                    </div>
+                    <!-- Single resume end -->
+
+                    <!-- Single resume start -->
+                    <div class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                      <span class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                      <div class="w-[70px] h-[70px]">
+                        <span class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                          <svg width="25" height="40" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                        </span>
+                      </div>
+                      <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                          <div class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                            <h3 class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary ">FRONTEND ENGINEER</h3>
+                            <span class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">React.js</span>
+                          </div>
+                          <p class="text-paragraph   mt-[10px] text-[17px]">Migrated a WordPress-based real estate website to React.js and Laravel, enhancing performance, scalability, and mobile responsiveness.</p>
+                        <span class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2017 - 2019</span>
+                      </div>
+                  </div>
+                  <!-- Single resume end -->
+
+                  </div>
+              </div>
+              <!-- Skill -->
+
+              <!-- Education -->
+              <div class="w-full max-w-[50%] sm:max-w-full flex-grow  sm:mt-[40px]">
+                <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
+                  <!-- border line -->
+                  <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1"></div>
+                  <!-- border line  end-->
+
+                  <!-- Single resume start -->
+                  <div class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative">
+                    <span class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                    <div class="w-[70px] h-[70px]">
+                      <span class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                        <svg width="25" height="44" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                      </span>
+                    </div>
+                    <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                      <div class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                        <h3 class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary ">Bachelor’s Degree</h3>
+                        <span class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">NTU</span>
+                      </div>
+                      <p class="text-paragraph   mt-[10px] text-[17px]">National Taiwan University</p>
+                      <span class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2012 - 2016</span>
+                    </div>
+                    <div class="w-[92px] h-[92px]">
+                      <img src="assets/images/NTU.jpg" style="border-radius: 10px;" />
+                    </div>
+                  </div>                  
+                  <!-- Single resume end -->
+                </div>
+              </div>
+              <!-- Education -->
+            </div>
+            <!-- Resume wrapper end -->
+          </div>
+        </section>
+        <!--  Resume section end -->
+
+         <!--  Skill section start -->
+        <section class="py-[70px]">
+          <div class="container mx-auto">
+            <!-- Section title start -->
+              <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                  <div class="max-w-full lg:max-w-[575px]  w-full">
+                    <span class="text-accent1 text-[40px] font-bold">- SKILLS -</span>                   
+                  </div>
+              </div>
+            <!-- Section title end -->
+
+            <!-- Resume wrapper start -->
+            <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] md:flex-wrap md:text-center">
+              <img src="https://images.javatpoint.com/images/logo/html-tutorial.png" alt="HTML" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/images/logo/css3.jpg" alt="CSS" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/images/logo/javascripthome.png" alt="JavaScript" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/js/nodejs/images/nodejs-logo.png" alt="Node.js" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/images/homeicon/react.png" alt="ReactJS" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/images/homeicon/mongodb.png" alt="MongoDB" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/sass/images/sass.png" alt="Sass" class="img-fluid">
+
+              <img src="https://images.javatpoint.com/bootstrappages/images/bootstrap-logo.jpg" alt="Bootstrap" class="img-fluid">
+
+            </div>
+            <!-- Resume wrapper end -->
+          </div>
+        </section>
+        <!--  Skill section end -->
+
+        <!-- Portfolio section start -->
+        <section class="bg-[#EFF3F7] pt-[50px] lg:pt-[70px]" id="portfolio">
+          <div class="container mx-auto">
+            <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] md:flex-wrap md:text-center">
+                  <div class="max-w-full lg:max-w-[580px]  w-full">
+                   <span class="text-accent1 text-[40px] font-bold">- PORTFOLIO -</span>
+                  </div>                
+            </div>            
+            <!-- Filter portfolio start -->
+            <div class="isotope--filter py-[70px]">
+              <div class="portfolio__grid flex mx-[-15px]">
+                <!-- single portfolio start -->
+                <div class="element-item w-[50%] lg:w-[33.33%]  px-[15px] web portfolio__parent" data-category="web">
+                   <div class="relative overflow-hidden">
+                      <a href="https://www.amyskitchen.ca/" target="_blank">
+                        <span class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                          <div class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                            <span class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                            </span>
+                            <h3 class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">Amy's Kitchen</h3>
+                            <span class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">React, Next, Laravel, Tailwind CSS</span>
+                          </div>
+                        </span>
+                        <div class="w-full portfolio__image--card">
+                          <img class="w-full transition duration-300" src="assets/images/portfolio/1.png" alt="">
+                        </div>
+                      </a>
+                  </div>
+                </div>
+                <!-- single portfolio end -->
+
+                <!-- single portfolio start -->
+                <div class="element-item w-[50%] lg:w-[33.33%]  px-[15px] graphics portfolio__parent" data-category="graphics">
+                   <div class="relative overflow-hidden">
+                    <a href="https://agileengine.com/" target="_blank">
+                        <span class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                          <div class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                            <span class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                            </span>
+                            <h3 class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">Agile Engine</h3>
+                            <span class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3"> React, Next, Material UI</span>
+                          </div>
+                        </span>
+                        <div class="w-full portfolio__image--card">
+                          <img class="w-full transition duration-300" src="assets/images/portfolio/2.png" alt="">
+                        </div>
+                    </a>                     
+                  </div>
+                </div>
+                <!-- single portfolio end -->                        
+
+                <!-- single portfolio start -->
+                <div class="element-item w-[50%] lg:w-[33.33%]  px-[15px] web development portfolio__parent" data-category="development">
+                   <div class="relative overflow-hidden">
+                    <a href="https://www.queengarnet.com/" target="_blank">
+                        <span class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                          <div class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                            <span class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                            </span>
+                            <h3 class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">Queen Garent</h3>
+                            <span class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">CSS, React, Next</span>
+                          </div>
+                        </span>
+                        <div class="w-full portfolio__image--card">
+                          <img class="w-full transition duration-300" src="assets/images/portfolio/6.png" alt="">
+                        </div>
+                      </a>                    
+                  </div>
+                </div>
+                <!-- single portfolio end -->
+              </div>
+            </div>
+            <!-- Filter portfolio end -->
+          </div>
+        </section>
+        <!-- Portfolio section end -->
+       </main>
+      <!-- Main wrapper end -->
+
+    <!-- Footer start -->
+      <footer class="h-[60px] bg-center bg-[#E0E3E7] flex items-center">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 only-md:grid-cols-2 lg:grid-cols-2">
+                <div class="flex">
+                  <p class="flex items-center flex-wrap sm:justify-center  ">Created with <span class="px-[3px] text-paragraph ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="text-paragraph" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart text-accent1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </span>  by <span class=" px-[3px]"><a class="text-accent1 hover:font-bold" href="#">Jane</a></span>© 2024</p>
+                </div>
+            </div>
+        </div>
+      </footer>
+    <!-- Footer end -->
+
+    <!-- Back to top start -->
+    <button id="scroll__top" class="fixed bottom-12 ltr:right-5 rtl:left-5 z-50 bg-accent1 text-white shadow-[0_2px_22px_rgba(0,0,0,0.16)] cursor-pointer translate-y-12 opacity-0 invisible transition-all duration-300 leading-[1] w-11 h-11 rounded-full border-none flex items-center justify-center hover:bg-primary   ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 leading-[1]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round"  stroke-width="48" d="M112 244l144-144 144 144M256 120v292"/></svg>
+    </button>  
+    <!-- Back to top end -->
+
+    <script>
+      let i = 0;
+      let txt = 'Full Stack Developer';
+      let speed = 300;
+      typeWriter();
+      function typeWriter() {
+        
+        if (i < txt.length) {
+          document.getElementById("developer").innerHTML += txt.charAt(i);
+          i++;    
+        }
+        else {
+          document.getElementById("developer").innerHTML = ""; 
+          i=0;
+        }
+        setTimeout(typeWriter, speed);
+      }
+      </script>
+      
+
+    <!-------- Plugins js ------>
+
+    <!-- imagesloaded js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+
+    <!-- Isotope js -->
+    <script src="assets/js/isotope.pkgd.min.js" defer></script>
+
+  <!-- Custom js -->
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
